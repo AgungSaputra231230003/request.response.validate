@@ -21,6 +21,6 @@ class ContactController extends Controller
             'message' => 'required'
         ]);
         contact::create($request -> all());
-        return redirect()->back()->with('success', 'contact anda telah berhasil do tambahkan ke database');
+        return redirect()->back()->with('success', 'contact anda telah berhasil di tambahkan ke database');
     }
 }
