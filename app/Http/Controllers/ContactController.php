@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\contact;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -19,7 +20,7 @@ class ContactController extends Controller
             'noHp' => 'required | min:12',
             'message' => 'required'
         ]);
-
+        contact::create($request -> all());
         return redirect()->back()->with('success', 'contact anda telah berhasil do tambahkan ke database');
     }
 }

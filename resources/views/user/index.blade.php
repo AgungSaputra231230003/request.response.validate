@@ -31,6 +31,9 @@
         <button type="submit">Simpan</button>
         <a href="/contact/create"><button type="button">create contact</button></a>
     </form>
+    <script>
+
+    </script>
 </body>
 
 </html>
