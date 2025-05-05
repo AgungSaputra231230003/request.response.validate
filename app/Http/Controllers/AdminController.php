@@ -20,7 +20,6 @@ class AdminController extends Controller
             'alamat' => 'required',
             'role' => 'required | in:super_admin,kasir'
         ]);
-        // admin::create($request -> all());
         return redirect()->back()->with('success', 'data admin anda telah berhasil di tambahkan ke database');
     }
 }
